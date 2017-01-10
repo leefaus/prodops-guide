@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: ProdOps Guides
 email: leefaus@github.com
-description: > A series of guides to help people build quality software, the first time
+description: A series of guides to help people build quality software, the first time
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://prodops.guide" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: leefaus
