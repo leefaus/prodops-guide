@@ -17,7 +17,7 @@ title: ProdOps Guides
 email: leefaus@github.com
 description: > # ProdOps: From Product to Production.  The future of DevOps.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.github.com/prodops-guide/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: leefaus
 github_username:  leefaus
 
