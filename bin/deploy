@@ -17,9 +17,11 @@ then
 fi
 git checkout -b gh-pages
 
+./script/bootstrap
+
 # Build site.
 bower install
-bundle exec jekyll build
+./script/build
 
 # Delete and move files.
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
