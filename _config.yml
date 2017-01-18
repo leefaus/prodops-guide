@@ -26,3 +26,7 @@ markdown: kramdown
 gems: [bootstrap, autoprefixer-rails, jekyll-assets]
 sass:
     sass_dir: _sass
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
