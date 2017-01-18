@@ -17,7 +17,7 @@ title: ProdOps Guides
 email: leefaus@github.com
 description: > # ProdOps: From Product to Production.  The future of DevOps.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://prodops.guide" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: leefaus
 github_username:  leefaus
 
@@ -41,8 +41,6 @@ assets:
     - _assets/stylesheets
     - _vendor/
 
-baseurl: /
-
 exclude:
   - .bowerrc
   - .travis.yml
@@ -53,6 +51,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - script/*
 
 ga_analytics: # Add Google Analytics tracking code
 
