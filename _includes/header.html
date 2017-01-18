@@ -1,0 +1,39 @@
+{% assign custom_url = site.url | append: site.baseurl %}
+{% assign full_base_url = custom_url %}
+<!--
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse mb-4">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="main-nav-items" class="collapse navbar-toggleable-xs">
+      <a class="site-title navbar-brand" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+  </div>
+</nav>
+-->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+  </button>
+  <a class="navbar-brand" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
