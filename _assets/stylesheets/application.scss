@@ -1,0 +1,11 @@
+@import 'custom'; // variables for bootstrap
+@import 'bootstrap';
+@import 'font-awesome';
+
+body {
+  padding-top: 55px;
+}
+
+.navbar {
+  min-height: 55px;
+}
