@@ -25,4 +25,10 @@ group :jekyll_plugins do
   gem 'autoprefixer-rails'
   gem 'jekyll-assets'
   gem 'font-awesome-sass'
+  gem "html-proofer"
+  gem "jekyll"
+  gem "jekyll-sitemap"
+  gem "mini_magick"
+  gem "sass"
+  gem "uglifier"
 end

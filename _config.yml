@@ -17,16 +17,45 @@ title: ProdOps Guides
 email: leefaus@github.com
 description: > # ProdOps: From Product to Production.  The future of DevOps.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://prodops.guide" # the base hostname & protocol for your site
 twitter_username: leefaus
 github_username:  leefaus
 
 # Build settings
 markdown: kramdown
-gems: [bootstrap, autoprefixer-rails, jekyll-assets]
+gems: [bootstrap, autoprefixer-rails, jekyll-assets, jekyll-sitemap]
 sass:
     sass_dir: _sass
+
+assets:
+  compress:
+      css: true
+      js: true
+  features:
+    automatic_img_size: false
+  sources:
+    - _assets/bower
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+
+baseurl: /
+
 exclude:
-  - vendor
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - vendor
+
+ga_analytics: # Add Google Analytics tracking code
+
+name: ProdOps Guides
+
+permalink: pretty

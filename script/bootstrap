@@ -1,4 +1,7 @@
-#!/bin/sh
+!/usr/bin/env sh
+
+# Set up Jekyll site. Run this script immediately after cloning the codebase.
+# https://github.com/thoughtbot/guides/tree/master/protocol
 
 set -e
 export CC=gcc
@@ -8,5 +11,7 @@ bundle check --path vendor/gems 2>&1 > /dev/null || {
   time bundle install --binstubs bin --path vendor/gems
 }
 
-# echo "==> Installing node dependencies…"
-# npm install
+echo "==> Installing javascript dependencies…"
+# Set up JS dependencies via Bower.
+bower --version > /dev/null || npm install -g bower
+bower install

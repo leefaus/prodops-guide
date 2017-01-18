@@ -1,6 +1,13 @@
-_site
+
 .sass-cache
 .jekyll-metadata
 vendor
 .bundle
-.asset-cache
+
+!.keep
+*.DS_Store
+*.sass-cache
+/.asset-cache/*
+/_assets/bower/*
+/_site/*
+/_vendor/*
