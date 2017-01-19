@@ -10,14 +10,22 @@ body {
   min-height: 55px;
 }
 
-.carousel {
-  margin-bottom: 20px;
-}
-
 .definitions {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: $white;
+}
+
+.container-fluid-image {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 30px;
+}
+
+.simon {
+  div {
+    margin-bottom: 10px;
+  }
 }
