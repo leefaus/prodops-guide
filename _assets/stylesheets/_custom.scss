@@ -58,7 +58,7 @@ $body-bg: $gray-lighter;
   @include hover {
     color: $color;
     background-color: $active-background;
-    @include gradient-y($background, $active-background);
+    @include gradient-y(lighten($background, 2%), lighten($active-background,2%));
         border-color: $active-border;
   }
 
