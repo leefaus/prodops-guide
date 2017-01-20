@@ -15,7 +15,7 @@
 $enable-flex:               true;
 $enable-rounded:            true;
 $enable-shadows:            false;
-$enable-gradients:          false;
+$enable-gradients:          true;
 $enable-transitions:        true;
 
 // Typography
@@ -31,8 +31,8 @@ $red:    #cf0c04 !default;
 $orange: #cf8104 !default;
 $yellow: #c9cd04 !default;
 $green:  #03a615 !default;
-$blue:   #0378a6 !default;
-$teal:   #14bafb !default;
+$teal:   #033da6 !default;
+$blue:   #14bafb !default;
 $pink:   #ff5b77 !default;
 $purple: #7d03a6 !default;
 
@@ -43,3 +43,61 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 $body-bg: $gray-lighter;
+
+@mixin button-variant-gradient($color, $background, $border) {
+  $active-background: darken($background, 5%);
+  $active-border: darken($border, 10%);
+  $background: lighten($background, 5%);
+
+  @include gradient-y($background, $active-background);
+  color: $color;
+  background-color: $background;
+  border-color: $active-background;
+  @include box-shadow($btn-box-shadow);
+
+  @include hover {
+    color: $color;
+    background-color: $active-background;
+    @include gradient-y($background, $active-background);
+        border-color: $active-border;
+  }
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
+    // Remove the gradient for the pressed/active state
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+    @include hover {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+}

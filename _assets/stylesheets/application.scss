@@ -21,11 +21,51 @@ body {
 .container-fluid-image {
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 50px;
   margin-bottom: 30px;
+  min-height: 400px;
+  background-image: linear-gradient(lighten($orange, 20%), $orange);
+  h1 {
+    font-size: 4em;
+  }
 }
 
 .simon {
   div {
     margin-bottom: 10px;
   }
+}
+
+.logo-main {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid lighten(#ffa615, 10%);
+  border-radius: 10px;
+}
+
+.horizontal-rule {
+  h6 {
+    margin-bottom: 20px;
+  }
+}
+
+.btn-gradient-primary {
+  @include button-variant-gradient(#fff, $brand-primary, $brand-primary);
+}
+
+.btn-gradient-warning {
+  @include button-variant-gradient(#fff, $brand-warning, $brand-warning);
+}
+
+.btn-gradient-danger {
+  @include button-variant-gradient(#fff, $brand-danger, $brand-danger);
+}
+
+.btn-gradient-success {
+  @include button-variant-gradient(#fff, $brand-success, $brand-success);
+}
+
+.btn-gradient-info {
+  @include button-variant-gradient(#fff, $brand-info, $brand-info);
 }
