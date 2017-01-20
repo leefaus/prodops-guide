@@ -52,7 +52,7 @@ $body-bg: $gray-lighter;
   @include gradient-y($background, $active-background);
   color: $color;
   background-color: $background;
-  border-color: $border;
+  border-color: $active-background;
   @include box-shadow($btn-box-shadow);
 
   @include hover {
