@@ -49,3 +49,23 @@ body {
     margin-bottom: 20px;
   }
 }
+
+.btn-gradient-primary {
+  @include button-variant-gradient(#fff, $brand-primary, $brand-primary);
+}
+
+.btn-gradient-warning {
+  @include button-variant-gradient(#fff, $brand-warning, $brand-warning);
+}
+
+.btn-gradient-danger {
+  @include button-variant-gradient(#fff, $brand-danger, $brand-danger);
+}
+
+.btn-gradient-success {
+  @include button-variant-gradient(#fff, $brand-success, $brand-success);
+}
+
+.btn-gradient-info {
+  @include button-variant-gradient(#fff, $brand-info, $brand-info);
+}
