@@ -4,7 +4,24 @@ Community guides for software creators. **[Check it out…](http://prodops.guide
 
 ## Goals
 
-Coming Soon ...
+The goal of the ProdOps Guides is to provide teams, companies and organizations a framework to understand how software impacts business needs.  
+
+Guides:
+- Accuracy:
+  - Did we build what our customer wanted?
+  - Did we align our requirements with company goals?
+- Utilization:
+  - Did we leverage our developers to the best of our abilities?
+  - Did we scope the work in a way that allows small, iterative releases?
+  - Did we keep our team small enough to allow for effective collaboration?
+- Precision:
+  - Did the product perform to expected standards?
+  - Did we minimize our technical debt?
+  - Did we define tests before implementation began?
+- Efficiency:
+  - Did we create a flexible environment?
+  - Did we create a scalable environment?
+  - Did we create a secure environment?
 
 ## Roadmap
 

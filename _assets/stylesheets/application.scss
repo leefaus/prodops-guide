@@ -24,9 +24,73 @@ body {
   padding-top: 50px;
   margin-bottom: 30px;
   min-height: 400px;
-  background-image: linear-gradient(lighten($orange, 20%), $orange);
+  background-image: linear-gradient(lighten(#cf8104, 20%), #cf8104);
   h1 {
     font-size: 4em;
+  }
+}
+
+.container-fluid-accuracy {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  min-height: 400px;
+  background-image: linear-gradient(lighten($purple, 20%), $purple);
+  h1 {
+    font-size: 4em;
+    color: $white;
+    font-weight: 800;
+    background-color: $gray-dark;
+    padding: 20px;
+  }
+}
+
+.container-fluid-efficiency {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  min-height: 400px;
+  background-image: linear-gradient(lighten($red, 20%), $red);
+  h1 {
+    font-size: 4em;
+    color: $white;
+    font-weight: 800;
+    background-color: $gray-dark;
+    padding: 20px;
+  }
+}
+
+.container-fluid-precision {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  min-height: 400px;
+  background-image: linear-gradient(lighten($brand-primary, 20%), $brand-primary);
+  h1 {
+    font-size: 4em;
+    color: $white;
+    font-weight: 800;
+    background-color: $gray-dark;
+    padding: 20px;
+  }
+}
+
+.container-fluid-utilization {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  min-height: 400px;
+  background-image: linear-gradient(lighten($green, 20%), $green);
+  h1 {
+    font-size: 4em;
+    color: $white;
+    font-weight: 800;
+    background-color: $gray-dark;
+    padding: 20px;
   }
 }
 
