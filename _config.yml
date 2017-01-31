@@ -58,3 +58,7 @@ ga_analytics: # Add Google Analytics tracking code
 name: ProdOps Guides
 
 permalink: pretty
+
+collections:
+  guides:
+    output: true
