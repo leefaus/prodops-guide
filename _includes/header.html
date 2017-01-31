@@ -8,10 +8,10 @@
   <a class="navbar-brand" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
+      {% for guide in site.guides %}
+        {% if guide.title %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
+          <a class="nav-link" href="{{ guide.url | prepend: full_base_url }}">{{ guide.title | escape }}</a>
         </li>
         {% endif %}
       {% endfor %}

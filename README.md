@@ -23,6 +23,10 @@ Guides:
   - Did we create a scalable environment?
   - Did we create a secure environment?
 
+### Value Statement
+
+> Put your values to work - @webdog (in Paris)
+
 ## Roadmap
 
 We've shared our vision and priorities for this project in our [roadmap](docs/roadmap.md).
@@ -53,4 +57,4 @@ Screenshots in the guide are used according to [various permissions](notices.md#
 
 The initial release of the guide was authored by **@leefaus, @coryvj, and @kingmichaelj**.
 
-Thanks to **@bkeepers, ... **
+Thanks to **@bkeepers** for helping me along this journey.

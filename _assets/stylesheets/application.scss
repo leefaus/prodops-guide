@@ -26,7 +26,7 @@ body {
   min-height: 400px;
   background-image: linear-gradient(lighten(#cf8104, 20%), #cf8104);
   h1 {
-    font-size: 4em;
+    font-weight: 800;
   }
 }
 
@@ -39,6 +39,7 @@ body {
   background-image: linear-gradient(lighten($purple, 20%), $purple);
   h1 {
     font-size: 4em;
+
     color: $white;
     font-weight: 800;
     background-color: $gray-dark;
